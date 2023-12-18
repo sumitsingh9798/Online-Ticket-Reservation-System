@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Ticket Booking system</title>
+    <link rel="stylesheet" href="flight-ticket-booking.css">
+</head>
+<body style="background-image: url(./background.jpg);background-size: cover;background-position: center;background-repeat: no-repeat;background-attachment: fixed;">
+     <button id="textbutton"></button>
+    <script src="flight-ticket-booking.javascript"></script>
+    <div class="booking-form-w3layouts">
+        <!-- Form starts here -->
+        <form action="flight-ticket-booking.php" method="POST">
+           <h2 class="sub-heading-agileits">Booking Details</h2>
+           <div class="main-flex-w3ls-sectns">
+              <div class="field-agileinfo-spc form-w3-agile-text1">
+               <select class="form-control" name="Departure">
+                  <option value="">Select Departure</option>
+                  <option value="Mumbai Chhatrapati Shivaji_Maharaj">Mumbai Chhatrapati Shivaji Maharaj</option>
+                  <option value="Kolkata Netaji Subhas Chandra_Bose">Kolkata Netaji Subhas Chandra Bose </option>
+                    <option value="Delhi Indira Gandhi International">Delhi Indira Gandhi International </option>
+                    <option value="Bangalore Kempegowda International">Bangalore Kempegowda International</option>
+                    <option value="Chennai Madras International Meenambakkam">Chennai Madras International Meenambakkam</option>
+                    <option value="Tripura Maharaja Bir Bikram">Tripura Maharaja Bir Bikram</option>
+
+                  <!-- Add other options here -->
+              </select>
+              
+              <!-- Destination -->
+              <select class="form-control" name="Destination">
+                  <option value="">Select Destination</option>
+                  <option value="Mumbai Chhatrapati Shivaji Maharaj">Mumbai Chhatrapati Shivaji Maharaj</option>
+                  <option value="Kolkata Netaji Subhas Chandra Bose">Kolkata Netaji Subhas Chandra Bose </option>
+                    <option value="Delhi Indira Gandhi International">Delhi Indira Gandhi International </option>
+                    <option value="Bangalore Kempegowda International">Bangalore Kempegowda International</option>
+                    <option value="Chennai Madras International Meenambakkam">Chennai Madras International Meenambakkam</option>
+                    <option value="Tripura Maharaja Bir Bikram">Tripura Maharaja Bir Bikram</option>
+
+                  <!-- Add other options here -->ramt</option>
+                 </select>
+              </div>
+           </div>
+           <div class="main-flex-w3ls-sectns">
+            <div class="field-agileinfo-spc form-w3-agile-text1">
+               <select class="form-control" name="Airline">
+                  <option value="">Select Airline</option>
+                  <option value="Indian Airline">Indian Airline</option>
+                  <!-- Add other options here -->
+              </select>
+              
+              <!-- Seating -->
+              <select class="form-control" name="Seating">
+               <option name="seating">Seating</option>
+               <option value="Window">Window</option>
+               <option value="Middle">Middle</option>
+
+                  <!-- Add other options here -->
+                 </select>
+              </div>
+           </div>
+           <div class="main-flex-w3ls-sectns">
+              <div class="field-agileinfo-spc form-w3-agile-text1">
+                 <input id="Journey_date" name="Journey_date" type="text" placeholder="Journey_date" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="" class="hasDatepicker">
+              </div>
+              <div class="field-agileinfo-spc form-w3-agile-text2">
+               <input type="text" id="Journey_time" name="Journey_time" class="timepicker form-control hasWickedpicker" placeholder="Journey_time" value="" onkeypress="return false;">
+              </div>
+             </div>
+              <div class="triple-wthree">
+              <div class="field-agileinfo-spc form-w3-agile-text11">
+                 <!-- Adult -->
+              <select class="form-control" name="Adult">
+               <option value="">Select Number of Adults</option>
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4</option>
+               <option value="5">5+</option>
+>
+               <!-- Add other options here -->
+             </select>
+
+             <!-- Children -->
+             <select class="form-control" name="Children">
+             <option value="">Select Number of Children</option>
+             <option value="1">1</option>
+             <option value="2">2</option>
+             <option value="3">3</option>
+             <option value="4">4</option>
+             <option value="5">5+</option>
+   <!-- Add other options here -->
+             </select>
+
+             <!-- Infant -->
+              <select class="form-control" name="Infant">
+              <option value="">Select Number of Infants</option>
+               <option value="1">1</option>
+                <!-- Add other options here -->
+                </select>
+                 </select>
+              </div>
+           </div>
+           <select class="form-control" name="Fare" id="Fare">
+            <option value="">Select  of Fare</option>
+            <option value="one way">One Way</option>
+            <option value="round trip">Round Trip</option>
+              <div class="clear">
+              </div>
+           </div>
+           </div>
+           <div class="main-flex-w3ls-sectns">
+            <div class="field-agileinfo-spc form-w3-agile-text1">
+               <input id="Return_Date" name="Return_Date" type="text" placeholder="Return_Date" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="" class="hasDatepicker">
+            </div>
+            <div class="field-agileinfo-spc form-w3-agile-text2">
+               <input type="text" id="Return_Time" name="Return_Time" class="timepicker form-control hasWickedpicker" placeholder="Return_Time" value="" onkeypress="return false;">
+            </div>
+         </div>
+         <div class="field-agileinfo-spc form-w3-agile-text">
+            <textarea name="Feedback" placeholder="Any Feedback.."></textarea>
+         </div>
+         <h3 class="sub-heading-agileits">Personal Details</h3>
+         <div class="main-flex-w3ls-sectns">
+            <div class="field-agileinfo-spc form-w3-agile-text1">
+               <input type="text" name="Name" placeholder="Full Name" required="">
+            </div>
+            <div class="field-agileinfo-spc form-w3-agile-text2">
+               <input type="text" name="Phone" placeholder="Phone" required="">
+            </div>
+         </div>
+         <div class="field-agileinfo-spc form-w3-agile-text">
+            <input type="email" name="Email" placeholder="Email" required="">
+         </div>
+         <br>
+
+        <label for="payment_code">Payment_Code:</label>
+        <input type="text" id="Paymentcode" name="Paymentcode" placeholder="Enter your url code">
+
+        <br>
+
+        <select class="form-control" name="select_payment_method" id="select_payment_method">
+         <option value="">select_payment_method</option>
+         <option value="credit card">Credit Card</option>
+         <option value="paypal">PayPal</option>
+        <br>
+
+         <div class="clear"></div>
+         <input type="submit" value="Submit">
+         <input type="reset" value="Clear Form">
+         <div class="clear"></div>
+      </form>
+      
+   </div>
+</body>
+</html>

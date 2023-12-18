@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Booking Form</title>
+    <link rel="stylesheet" href="form.css">
+     <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="container"><!--container-->
+
+        <form class="form-group" action="input.php" method="post" ><!--form-->
+          <h1 class="text-center"><strong>WELCOME TO JOURNEY 360</strong></h1>
+            <h2 class="text-center"><strong>Train Booking Form</strong> </h2>
+
+            <div id="form"><!--form-->
+                <h3 class="text-white">Booking Details</h3>
+
+            <div id="input"><!--input-->
+                <input type="text" name="from" id="input-group" placeholder="From">
+                <input type="text" name="to" id="input-group" placeholder="To">
+                <input type="text" name="ddate" id="input-group" placeholder="Departure Date">
+                <input type="text" name="dtime" id="input-group" placeholder="Departure Time">
+                <select  name="train" id="input-group" style="background: black;">
+                    <option value="">Preffered Train</option>
+                    <option value="abc1">PURI EXPRESS</option>
+                    <option value="abc2">CHENNAI EXPRESS</option>
+                    <option value="abc3">DOON EXPRESS</option>
+                </select>
+                <select  name="seating" id="input-group" style="background: black;">
+                    <option value="">Preffered Seating</option>
+                    <option value="first class">First class</option>
+                    <option value="second class">Second class</option>
+                </select>
+                </div><!--input-->
+
+                <div id="input2"><!--input2-->
+                    <input type="number" name="adult" id="input-group" placeholder="Adult">
+                    <input type="number" name="children" id="input-group" placeholder="Children(2-11years)">
+                    <input type="number" name="infant" id="input-group" placeholder="infant(under 2years)">
+                </div><!--input2-->
+
+                <div id="input3"><!--input3-->
+                    <span id="input-group" class="text-primary">Select Your Fare</span> 
+                    <input type="radio" id="input-group" name="faretype">
+                    <label class="text-white" for="input-group">Single</label>
+                    <input type="radio" id="input-group" name="faretype">
+                    <label class="text-white" for="input-group">Return</label>
+                </div><!--input3-->
+
+                <div id="input4"><!--input4-->
+                    <input type="text" name="rdate"id="input-group" placeholder="Return Date">
+                    <input type="text"name="rtime" id="input-group" placeholder="Return time">
+                </div><!--input4-->
+
+                <div id="input5"><!--input5-->
+                    <h3 class="text-white">Personal Details</h3>
+                </div><!--input5-->
+
+                <div id="input6"><!--input6-->
+                    <input type="text" name="name"id="input-group" placeholder="Full Name">
+                    <input type="number" name="pno"id="input-group" placeholder="Phone Number">
+                    <input type="email" name="email" id="input-group1" placeholder="Email">
+                </div><!--input6-->
+                <button type="submit" name="submit" class="btn btn-warning text-white">Submit Form</button>
+                <button type="reset" class="btn btn-primary">Clear Form</button>
+            </div><!--form-->
+
+        </form><!--form-->
+
+    </div><!--container-->
+</body>
+</html>
